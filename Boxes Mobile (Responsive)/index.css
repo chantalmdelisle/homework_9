@@ -1,0 +1,98 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+header{
+	border: 5px solid red;
+	width: 100%;
+}
+ul{
+	padding:0;
+}
+nav li {
+	display: block;
+	border: 5px solid orange;
+	list-style: none;
+	float: left;
+	width: 15%;
+	height: 100px;
+}
+button{
+	display: none;
+	border: 5px dashed orange;
+	float: right;
+	width: 15%;
+	height: 100px;
+}
+main{
+	border: 5px solid yellow;
+	width: 100%;
+	height: 300px;
+}
+.CTA{
+	border: 5px solid green;
+	width: 25%;
+	height: 300px;
+	float: right;
+}
+
+footer{
+	border: 5px solid blue;
+	width: 100%;
+	height: 300px;
+	clear: both;
+}
+.footer{
+	border: 5px solid purple;
+	width: 33.33%;
+	height: 275px;
+	float: left;
+}
+
+
+@media screen and (max-width: 500px) {
+	header{
+
+	}
+	nav li {
+		float: none;
+		width: 100%;
+		display: none;
+	}
+	button{
+		display: block;
+		height: 40px;
+		width: 100%;
+		float: none;
+	}
+	main{
+		height: 100px;
+	}
+	.CTA{
+		float: none;
+		width: 100%;
+		height: 75px;
+	}
+	.hide{
+		display: none;
+	}
+	footer{
+		height: auto;
+	}
+	.footer{
+		float: none;
+		width: 100%;
+		height: 75px;
+	}
+}
